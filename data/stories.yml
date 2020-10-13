@@ -1,0 +1,26 @@
+version:
+  "2.0"
+
+  # - affirm
+  # - inform
+  #
+
+stories:
+  - story: happy path
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+      - intent: inform
+      - action: utter_inform
+
+  - story: sad path 1
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+      - intent: deny
+      - action: utter_deny
+
+  - story: sad path 2
+    steps:
+      - intent: deny
+      - action: utter_deny

@@ -1,0 +1,22 @@
+version: "2.0"
+
+intents:
+  - goodbye
+  - affirm
+  - deny
+  - inform
+  - bot_challenge
+
+responses:
+  utter_affirm:
+    - text: "Perfect! What type of property do you have in mind?(Condo, Link, Semi-D or Bunglow)"
+  utter_inform:
+    - text: "Oh good! We have the ideal propery for you. What is your budget"
+  utter_deny:
+    - text: "Let us know how we can help otherwise"
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
