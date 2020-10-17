@@ -1,11 +1,21 @@
 version: "2.0"
 
+slots:
+  inform:
+    type: text
+    influence_conversation: true
+
+
 intents:
   - goodbye
   - affirm
   - deny
   - inform
   - bot_challenge
+  # - property_type
+
+entities:
+  - inform
 
 responses:
   utter_affirm:
@@ -16,6 +26,13 @@ responses:
     - text: "Let us know how we can help otherwise"
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
+
+actions:
+  - utter_affirm
+  - utter_deny
+  - utter_iamabot
+  - utter_inform
+  - action_crm
 
 session_config:
   session_expiration_time: 60

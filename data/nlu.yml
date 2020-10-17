@@ -55,7 +55,7 @@ nlu:
     examples: |
       - semi-d
       - condo
-      - linked
+      - link
       - bunglow
       - wonderful
 
