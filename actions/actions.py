@@ -25,7 +25,11 @@ class ActionCrm(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]):
+<<<<<<< HEAD
             choice = tracker.latest_message.get('text')
+=======
+            choice = tracker.get_slot('inform')
+>>>>>>> 65f524ecf61f533fe752a242fce2b5179d2a4117
             requirement = choice
             response = """Oh good! We have the ideal {} tucked in serene and landscape setting for you.""".format (requirement)
             dispatcher.utter_message(response)
@@ -49,10 +53,10 @@ class ActionCrm(Action):
 
 
 # class ActionHelloWorld(Action):
-#
+
 #     def name(self) -> Text:
 #         return "action_hello_world"
-#
+
 #     def run(self, dispatcher: CollectingDispatcher,
 #             tracker: Tracker,
 #             domain: Dict[Text, Any]) -> List[D - rule: Say goodbye anytime the user says goodbye
@@ -63,5 +67,5 @@ class ActionCrm(Action):
 #   ict[Text, Any]]:
 # #
 #         dispatcher.utter_message(text="Hello World!")
-#
+
 #         return []
