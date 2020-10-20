@@ -45,23 +45,23 @@ nlu:
       - no way
       - not really
 
-  - intent: inform
+  - intent: property_type
     examples: |
       - semi-d
       - condo
-      - link
-      - bunglow
+      - linked
+      - bungalow
 
-  # - intent: inform
-  #   examples: |
-  #     - I want a [semi-d](property_type)
-  #     - show me a [condo](property_type)
-  #     - I need a [link](property_type)
-  #     - give me [bunglow](property_type)
-  #     - i require a [semi-d](property_type)
-  #     - i am looking for [bunglow](property_type)
-  #     - It should be [link](property_type)
-  #     - it must be a [condo](property_type)
+  - intent: inform
+    examples: |
+      - I want a [semi-d](property_type)
+      - show me a [condo](property_type)
+      - I need a [linked](property_type)
+      - give me [bungalow](property_type)
+      - i require a [semi-d](property_type)
+      - i am looking for [bungalow](property_type)
+      - It should be [linked](property_type)
+      - it must be a [condo](property_type)
 
   - intent: bot_challenge
     examples: |

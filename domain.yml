@@ -1,7 +1,7 @@
 version: "2.0"
 
 slots:
-  inform:
+  property_type:
     type: text
     influence_conversation: true
 
@@ -12,14 +12,14 @@ intents:
   - deny
   - inform
   - bot_challenge
-  # - property_type
+  - property_type
 
 entities:
   - inform
 
 responses:
   utter_affirm:
-    - text: "Perfect! What type of property do you have in mind?(Condo, Link, Semi-D or Bunglow)"
+    - text: "Perfect! What type of property do you have in mind?(Condo, Linked, Semi-D or Bunglow)"
   utter_inform:
     - text: "Oh good! We have the ideal propery for you. What is your budget"
   utter_deny:
