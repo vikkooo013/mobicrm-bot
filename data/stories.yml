@@ -13,14 +13,19 @@ stories:
       - intent: inform
       - action: utter_inform
 
-  - story: sad path 1
+  - story: happy path 1
     steps:
       - intent: affirm
       - action: utter_affirm
       - intent: deny
       - action: utter_deny
 
-  - story: sad path 2
+  - story: sad path 1
     steps:
-      - intent: deny
-      - action: utter_deny
+      - intent: inform
+      - action: utter_inform
+
+  # - story: sad path 2
+  #   steps:
+  #     - intent: deny
+  #     - action: utter_deny
