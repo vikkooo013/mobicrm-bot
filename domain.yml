@@ -14,14 +14,16 @@ intents:
   - bot_challenge
   - property_type
 
+
 entities:
   - inform
+  - property_type
 
 responses:
   utter_affirm:
     - text: "Perfect! What type of property do you have in mind?(Condo, Linked, Semi-D or Bunglow)"
   utter_inform:
-    - text: "Oh good! We have the ideal propery for you. What is your budget"
+    - text: "Oh good! We have the ideal property tucked in serene and landscape setting for you, what is your ideal Budget."
   utter_deny:
     - text: "Let us know how we can help otherwise"
   utter_iamabot:

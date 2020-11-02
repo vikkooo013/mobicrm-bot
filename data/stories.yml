@@ -11,7 +11,7 @@ stories:
       - intent: affirm
       - action: utter_affirm
       - intent: inform
-      - action: action_crm
+      - action: utter_inform
 
   - story: sad path 1
     steps:
