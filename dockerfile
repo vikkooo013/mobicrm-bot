@@ -3,7 +3,7 @@ SHELL ["/bin/bash", "-c"]
 # default to utf-8 file encoding
 ENV LANG C.UTF-8
 ARG GITHUB_TOKEN
-RUN apt-get update -qq &&\
+RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
     build-essential \
     wget \
@@ -18,7 +18,7 @@ RUN apt-get update -qq &&\
     libpng-dev \
     curl && \
     apt-get clean && \
-    rm -rf /var/lib/apt-get/lists/*/tmp/*var/tmp/* && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     mkdir /app
 WORKDIR /app
 COPY requirements.txt ./
